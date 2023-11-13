@@ -6,7 +6,7 @@ This project aims to analyze unintentional injuries data in Scotland using a com
 
 ## Data Source
 
-The dataset used in this project is available from [Scottish Health and Social Care Open Data for unintentional injuries admissions]([[link 1](https://www.opendata.nhs.scot/dataset/unintentional-injuries/resource/aee43295-2a13-48f6-bf05-92769ca7c6cf)] and [for Council Area 2011 - Council Area 2019]([[link 2](https://www.opendata.nhs.scot/dataset/geography-codes-and-labels)].
+The dataset used in this project is available from [Scottish Health and Social Care Open Data for unintentional injuries admissions](https://www.opendata.nhs.scot/dataset/unintentional-injuries/resource/aee43295-2a13-48f6-bf05-92769ca7c6cf) and [for Council Area 2011 - Council Area 2019](https://www.opendata.nhs.scot/dataset/geography-codes-and-labels).
 
 ## Project Structure
 
