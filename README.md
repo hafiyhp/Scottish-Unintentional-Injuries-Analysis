@@ -6,7 +6,7 @@ This project aims to analyze unintentional injuries data in Scotland using a com
 
 ## Data Source
 
-The dataset used in this project is available from [Scottish Health and Social Care Open Data for unintentional injuries admissions](https://www.opendata.nhs.scot/dataset/unintentional-injuries/resource/aee43295-2a13-48f6-bf05-92769ca7c6cf) and [for Council Area 2011 - Council Area 2019](https://www.opendata.nhs.scot/dataset/geography-codes-and-labels).
+The dataset used in this project is available from Scottish Health and Social Care Open Data website [for unintentional injuries admissions](https://www.opendata.nhs.scot/dataset/unintentional-injuries/resource/aee43295-2a13-48f6-bf05-92769ca7c6cf) and [for Council Area 2011 - Council Area 2019](https://www.opendata.nhs.scot/dataset/geography-codes-and-labels).
 
 ## Project Structure
 
@@ -73,6 +73,42 @@ The project uses Jupyter Notebook (`unintentional_injuries_updated.ipynb`) for d
 ## Results and Insights
 
 Findings and insights from each question are detailed in the Jupyter Notebook and can be reviewed in the `/docs` directory.
+
+Question 1: Number of admissions in 2022/23
+
+Finding: The total number of admissions for unintentional injuries in the year 2022/23 is 1084296.
+
+Question 2: What percentage of these admissions were for falls?
+
+Finding: The percentage of admissions for falls among all unintentional injuries in 2022/23 is 32.9%.
+
+Question 3: Which health board had the largest percentage change in unintentional injuries admissions between 2020/21 and 2021/22?
+
+Finding: The health board with the largest percentage change in unintentional injuries admissions from 2020/21 to 2021/22 is NHS Forth Valley.
+
+Question 4a: Which health board had the highest number of admissions for road traffic accidents (RTA) in 2019/20?
+
+Finding: The health board with the highest number of admissions for road traffic accidents in 2019/20 is NHS Greater Glasgow and Clyde.
+
+Question 4b: What percentage of these admissions were for males?
+
+Finding: The percentage of admissions for road traffic accidents that were for males in 2019/20 is 33.3%.
+
+Question 5: What was the percentage change in admissions for scalds in the home in NHS Lothian Health Board from 2019/20 to 2020/21?
+
+Finding: The percentage change in admissions for scalds in the home in NHS Lothian Health Board from 2019/20 to 2020/21 is 23.1%.
+
+Question 6: In Perth and Kinross Council area in 2022/23, what percentage of admissions for falls occurred in the home?
+
+Finding: The percentage of admissions for falls in the home within Perth and Kinross Council area in 2022/23 is 26.0%.
+
+Question 7: In Scotland in 2022/23, how many admissions for unintentional injuries were there for females aged 75+?
+
+Finding: The total number of admissions for unintentional injuries among females aged 75 and older in Scotland for 2022/23 is 68778.
+
+Question 8: Plot the number of admissions for unintentional injuries for males in 2022/23 by location type and health board
+
+The visualization of male unintentional injuries admissions in 2022/23 reveals notable regional variations. NHS Greater Glasgow and Clyde exhibit the highest cumulative admissions at 35,530, while NHS Shetland reports the lowest at 5,142. These discrepancies suggest potential differences in population density, urbanization, and public health priorities. Such insights can guide targeted interventions, resource allocation, and injury prevention strategies tailored to the specific needs of each health board.
 
 ## GitHub Repository Usage
 
