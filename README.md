@@ -20,6 +20,7 @@ The project is organized into the following directories:
 ## SQL Setup
 
 -- 1. Create PostgreSQL Database
+
 CREATE DATABASE "Unintentional_injuries_NHS"
     WITH
     OWNER = postgres
@@ -33,6 +34,7 @@ CREATE DATABASE "Unintentional_injuries_NHS"
 -- 2. Create Tables and Import Data
 
 -- 2.1 Create modified_admissions table
+
 CREATE TABLE modified_admissions (
     FinancialYear VARCHAR,
     CA VARCHAR,
@@ -44,10 +46,12 @@ CREATE TABLE modified_admissions (
 );
 
 -- 2.2 Import data into modified_admissions
+
 COPY modified_admissions FROM 'C:/Program Files/PostgreSQL/16/data/Data_copy/modified_admissions.csv'
 DELIMITER ',' CSV HEADER;
 
 -- 2.3 Create modified_council_health_board table
+
 CREATE TABLE modified_council_health_board (
     CA VARCHAR,
     CAName VARCHAR,
@@ -56,18 +60,21 @@ CREATE TABLE modified_council_health_board (
 );
 
 -- 2.4 Import data into modified_council_health_board
+
 COPY modified_council_health_board FROM 'C:/Program Files/PostgreSQL/16/data/Data_copy/modified_council_health_board.csv'
 DELIMITER ',' CSV HEADER;
 
 -- 3. Create Merged Data and Export as CSV
 
 -- 3.1 Create a new table from the result of the join
+
 SELECT *
 INTO merged_data
 FROM modified_admissions
 JOIN modified_council_health_board ON modified_admissions.CA = modified_council_health_board.CA;
 
 -- 3.2 Select data from merged_data
+
 SELECT modified_admissions.FinancialYear, modified_admissions.CA, modified_admissions.AgeGroup, modified_admissions.Sex, modified_admissions.InjuryLocation, modified_admissions.InjuryType, modified_admissions.NumberOfAdmissions,
        modified_council_health_board.CAName, modified_council_health_board.HBName, modified_council_health_board.Country
 INTO merged_data
@@ -75,6 +82,7 @@ FROM modified_admissions
 JOIN modified_council_health_board ON modified_admissions.CA = modified_council_health_board.CA;
 
 -- 3.3 Export merged_data as CSV
+
 COPY merged_data TO 'C:/Program Files/PostgreSQL/16/data/Data_copy/merged_data.csv' DELIMITER ',' CSV HEADER;
 
 
