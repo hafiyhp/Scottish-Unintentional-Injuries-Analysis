@@ -1,4 +1,4 @@
-# Scottish Unintentional Injuries Analysis: SQL and Python Project
+# Scottish Unintentional Injuries Analysis
 
 ## Overview
 
