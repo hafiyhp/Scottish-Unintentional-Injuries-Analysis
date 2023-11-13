@@ -64,7 +64,7 @@ The project is organized into the following directories:
 
 ## Data Analysis with Python
 
-The project uses Jupyter Notebook (`unintentional_injuries.ipynb`) for data analysis and visualization. The notebook addresses specific questions related to unintentional injuries.
+The project uses Jupyter Notebook (`unintentional_injuries_updated.ipynb`) for data analysis and visualization. The notebook addresses specific questions related to unintentional injuries.
 
 ## Jupyter Notebook
 
